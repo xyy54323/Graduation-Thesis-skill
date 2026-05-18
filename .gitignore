@@ -63,7 +63,9 @@ tools/BypassAIGC/package/frontend/node_modules/
 参考项目/
 .ace-tool/
 
-# Publish only the runnable BypassAIGC executable in this skill repository
+# Publish only the minimal runnable BypassAIGC bundle in this skill repository
 tools/BypassAIGC/**
 !tools/BypassAIGC/
 !tools/BypassAIGC/AI学术写作助手.exe
+!tools/BypassAIGC/.env
+!tools/BypassAIGC/ai_polish.db
