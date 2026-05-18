@@ -143,16 +143,16 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 
 ## 5. 检测报告处理与降 AIGC
 
-当用户要求降 AI、降 AIGC、降查重，或提供 PaperPass、知网、维普等检测报告时，先读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)。
+当用户要求降 AI、降 AIGC、降查重，或提供 PaperPass、SpeedAI 等检测报告时，先读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)。
 
 执行原则：
 
-- 先分析报告，不直接整篇重写。
-- 先建立“报告位置 -> 论文章节 -> 问题类型 -> 修改强度”的热点映射。
-- 优先修改高风险正文叙述段，谨慎处理摘要、图题、表题、参考文献和学校固定格式文本。
-- 改写方式以句子结构调整、段落重心转换、项目证据补强为主。
+- 优先使用 `tools/BypassAIGC/AI学术写作助手.exe`，由工具完成报告解析、片段提取、优化和 Word 导出。
+- 运行工具时，`.env` 需要由用户自己配置真实可用的 API Key、Base URL 和模型名称；AI 不要替用户编造密钥。
+- 用户提供 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“AIGC片段优化”。
+- 没有 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“整篇提取优化”。
+- 默认不处理摘要、目录、图题、表题、参考文献和学校固定格式文本，除非用户明确要求。
 - 改完输出 `降AIGC分析报告.md` 和 `降AIGC修改说明.md`，并提示用户重新检测。
-- 用户拿到新报告后，只处理仍然标出的剩余热点，不重复重写整篇论文。
 
 ## 6. 格式分析
 
