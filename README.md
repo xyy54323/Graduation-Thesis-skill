@@ -15,7 +15,7 @@
 
 ## 参考项目
 
-- BypassAIGC：[https://github.com/chi111i/BypassAIGC](https://github.com/chi111i/BypassAIGC)
+- BypassAIGC exe 源码：[https://github.com/xyy54323/BypassAIGC](https://github.com/xyy54323/BypassAIGC)
 
 ## 最小环境
 
@@ -52,6 +52,8 @@ git clone https://github.com/xyy54323/Graduation-Thesis-skill.git "$env:USERPROF
 ```text
 tools/BypassAIGC/AI学术写作助手.exe
 ```
+
+该 exe 对应源码参考：[https://github.com/xyy54323/BypassAIGC](https://github.com/xyy54323/BypassAIGC)。
 
 运行前确认同目录存在：
 
@@ -102,4 +104,3 @@ http://localhost:9800
 ```text
 使用 graduation-thesis-skill，根据 PaperPass/SpeedAI PDF 检测报告和原始 docx，启动内置工具进行 AIGC片段优化，导出后立即恢复正文参考文献引用跳转，并生成降AIGC分析报告.md 和 降AIGC修改说明.md。
 ```
-
