@@ -1,0 +1,129 @@
+<mxfile host="Electron" agent="Codex">
+  <diagram id="ai-flow" name="第 1 页">
+    <mxGraphModel dx="2060" dy="1252" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="980" pageHeight="1180" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="start" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;arcSize=25;" value="开始" vertex="1">
+          <mxGeometry height="44" width="120" x="430" y="150" as="geometry" />
+        </mxCell>
+        <mxCell id="open" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="进入AI功能页面" vertex="1">
+          <mxGeometry height="50" width="220" x="380" y="220" as="geometry" />
+        </mxCell>
+        <mxCell id="choose" parent="1" style="rhombus;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="选择AI功能类型" vertex="1">
+          <mxGeometry height="95" width="160" x="410" y="300" as="geometry" />
+        </mxCell>
+        <mxCell id="chat1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="输入文本问题" vertex="1">
+          <mxGeometry height="50" width="210" x="80" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="chat2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="组织messages上下文" vertex="1">
+          <mxGeometry height="50" width="210" x="80" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="chat3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="调用DeepSeek对话模型" vertex="1">
+          <mxGeometry height="50" width="210" x="80" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="camera1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="选择或拍摄图片" vertex="1">
+          <mxGeometry height="50" width="210" x="385" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="camera2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="压缩图片并转Base64" vertex="1">
+          <mxGeometry height="50" width="210" x="385" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="camera3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="调用GLM图像理解模型" vertex="1">
+          <mxGeometry height="50" width="210" x="385" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="tiku1" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="完成专业题库答题" vertex="1">
+          <mxGeometry height="50" width="210" x="690" y="455" as="geometry" />
+        </mxCell>
+        <mxCell id="tiku2" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="生成题目解析Prompt" vertex="1">
+          <mxGeometry height="50" width="210" x="690" y="535" as="geometry" />
+        </mxCell>
+        <mxCell id="tiku3" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="调用DeepSeek解析模型" vertex="1">
+          <mxGeometry height="50" width="210" x="690" y="615" as="geometry" />
+        </mxCell>
+        <mxCell id="result" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="接收并校验AI返回内容" vertex="1">
+          <mxGeometry height="50" width="220" x="380" y="695" as="geometry" />
+        </mxCell>
+        <mxCell id="render" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="Markdown解析并展示结果" vertex="1">
+          <mxGeometry height="50" width="220" x="380" y="780" as="geometry" />
+        </mxCell>
+        <mxCell id="save" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;" value="保存对话或更新页面状态" vertex="1">
+          <mxGeometry height="50" width="220" x="380" y="865" as="geometry" />
+        </mxCell>
+        <mxCell id="end" parent="1" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#FFFFFF;strokeColor=#000000;strokeWidth=1.5;fontSize=15;fontFamily=SimSun;arcSize=25;" value="结束" vertex="1">
+          <mxGeometry height="44" width="120" x="430" y="945" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" source="start" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="open" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" source="open" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="300" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" source="choose" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;fontSize=14;" target="chat1" value="智能交流">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="347" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" source="choose" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;fontSize=14;" target="camera1" value="拍照识别">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e8" edge="1" parent="1" source="choose" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;fontSize=14;" target="tiku1" value="题目解析">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="347" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e9" edge="1" parent="1" source="chat1" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="chat2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e10" edge="1" parent="1" source="chat2" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="chat3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e11" edge="1" parent="1" source="camera1" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="camera2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e12" edge="1" parent="1" source="camera2" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="camera3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e13" edge="1" parent="1" source="tiku1" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="tiku2" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e14" edge="1" parent="1" source="tiku2" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="tiku3" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e15" edge="1" parent="1" source="chat3" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="result" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="185" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e16" edge="1" parent="1" source="camera3" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="result" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e17" edge="1" parent="1" source="tiku3" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="result" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="795" y="720" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e18" edge="1" parent="1" source="result" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="render" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e19" edge="1" parent="1" source="render" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" target="save" value="">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="e20" edge="1" parent="1" source="save" style="endArrow=block;html=1;rounded=0;strokeColor=#000000;strokeWidth=1.5;fontFamily=SimSun;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="490" y="945" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

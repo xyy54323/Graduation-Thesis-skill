@@ -1,0 +1,19 @@
+interface:
+  display_name: "Graduation Thesis"
+  short_description: "Write, format, illustrate, lower AIGC risk, back up, and finalize Chinese software engineering undergraduate theses"
+  default_prompt: "Use this skill to plan, write, format, illustrate, lower AIGC or similarity risk, back up, and finalize a Chinese undergraduate software engineering thesis from a real codebase."
+
+policy:
+  allow_implicit_invocation: true
+
+capabilities:
+  - Build thesis outlines and chapter drafts from real project evidence
+  - Manage Markdown manuscript writing with assets, diagrams, and screenshots
+  - Triage similarity and AIGC reports into evidence-preserving rewrite actions
+  - Extract school formatting rules into 论文格式.md from manuals, templates, and examples
+  - Apply Word thesis formatting with categorized backups and final verification
+  - Check diagrams, tables, captions, references, TOC, page headers, footers, and cross-references
+
+prerequisites:
+  - Source project codebase and thesis materials
+  - School format manual, Word template, or sample thesis for final formatting

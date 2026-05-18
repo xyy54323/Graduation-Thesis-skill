@@ -1,0 +1,104 @@
+<mxfile host="Electron" agent="Codex">
+  <diagram id="admin-class" name="第 1 页">
+    <mxGraphModel dx="1373" dy="835" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1250" pageHeight="720" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="login_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="Login.vue" vertex="1">
+          <mxGeometry height="34" width="250" x="80" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="login_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- form&lt;br&gt;- router&lt;br&gt;-------------------------&lt;br&gt;+ login()" vertex="1">
+          <mxGeometry height="126" width="250" x="80" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="layout_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="Layout.vue" vertex="1">
+          <mxGeometry height="34" width="250" x="500" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="layout_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- menuItems&lt;br&gt;- routerView&lt;br&gt;-------------------------&lt;br&gt;+ logout()" vertex="1">
+          <mxGeometry height="126" width="250" x="500" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="manage_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="ManageView" vertex="1">
+          <mxGeometry height="34" width="250" x="920" y="50" as="geometry" />
+        </mxCell>
+        <mxCell id="manage_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- tableData&lt;br&gt;- form&lt;br&gt;- dialogVisible&lt;br&gt;- queryParams&lt;br&gt;-------------------------&lt;br&gt;+ loadData()&lt;br&gt;+ handleAdd()&lt;br&gt;+ handleEdit()&lt;br&gt;+ handleDelete()&lt;br&gt;+ save()" vertex="1">
+          <mxGeometry height="210" width="250" x="920" y="84" as="geometry" />
+        </mxCell>
+        <mxCell id="request_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="request.js" vertex="1">
+          <mxGeometry height="34" width="250" x="500" y="310" as="geometry" />
+        </mxCell>
+        <mxCell id="request_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- baseUrl&lt;br&gt;- timeout&lt;br&gt;- responseInterceptor&lt;br&gt;-------------------------&lt;br&gt;+ post(url, params)&lt;br&gt;+ returnResult()" vertex="1">
+          <mxGeometry height="144" width="250" x="500" y="344" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="AdminController" vertex="1">
+          <mxGeometry height="34" width="250" x="80" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="admin_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- adminService&lt;br&gt;-------------------------&lt;br&gt;+ login(username,password)&lt;br&gt;+ updatePassword(id,password)" vertex="1">
+          <mxGeometry height="108" width="250" x="80" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="generic_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="GenericController" vertex="1">
+          <mxGeometry height="34" width="250" x="500" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="generic_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- jdbcTemplate&lt;br&gt;-------------------------&lt;br&gt;+ list(table,params)&lt;br&gt;+ add(table,params)&lt;br&gt;+ update(table,params)&lt;br&gt;+ delete(table,id)&lt;br&gt;+ get(table,id)" vertex="1">
+          <mxGeometry height="130" width="250" x="500" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="file_h" parent="1" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#5B9BD5;strokeColor=#5B9BD5;fontColor=#FFFFFF;fontStyle=1;fontSize=14;fontFamily=Microsoft YaHei;" value="FileController" vertex="1">
+          <mxGeometry height="34" width="250" x="920" y="540" as="geometry" />
+        </mxCell>
+        <mxCell id="file_b" parent="1" style="rounded=0;whiteSpace=wrap;html=1;align=left;spacingLeft=14;fillColor=#F2F2F2;strokeColor=#E0E0E0;fontSize=13;fontFamily=Microsoft YaHei;" value="- uploadDir&lt;br&gt;-------------------------&lt;br&gt;+ upload(file)" vertex="1">
+          <mxGeometry height="92" width="250" x="920" y="574" as="geometry" />
+        </mxCell>
+        <mxCell id="e1" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;strokeColor=#5B9BD5;strokeWidth=1.5;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="205" y="360" />
+              <mxPoint x="455" y="360" />
+            </Array>
+            <mxPoint x="205" y="210" as="sourcePoint" />
+            <mxPoint x="500" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e2" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;strokeColor=#5B9BD5;strokeWidth=1.5;dashed=1;" value="">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="1045" y="360" />
+              <mxPoint x="795" y="360" />
+            </Array>
+            <mxPoint x="1045" y="294" as="sourcePoint" />
+            <mxPoint x="750" y="360" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e3" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;strokeColor=#5B9BD5;strokeWidth=1.5;" value="路由承载">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="750" y="145" as="sourcePoint" />
+            <mxPoint x="920" y="145" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e5" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;strokeColor=#5B9BD5;strokeWidth=1.5;dashed=1;" value="/admin/login">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="360" y="430" />
+              <mxPoint x="360" y="590" />
+            </Array>
+            <mxPoint x="500" y="430" as="sourcePoint" />
+            <mxPoint x="330" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e6" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;strokeColor=#5B9BD5;strokeWidth=1.5;dashed=1;" value="/api/{table}">
+          <mxGeometry relative="1" as="geometry">
+            <mxPoint x="625" y="488" as="sourcePoint" />
+            <mxPoint x="625" y="540" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="e7" edge="1" parent="1" style="endArrow=open;html=1;rounded=0;strokeColor=#5B9BD5;strokeWidth=1.5;dashed=1;" value="/file/upload">
+          <mxGeometry relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="890" y="430" />
+              <mxPoint x="890" y="590" />
+            </Array>
+            <mxPoint x="750" y="430" as="sourcePoint" />
+            <mxPoint x="920" y="590" as="targetPoint" />
+          </mxGeometry>
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
