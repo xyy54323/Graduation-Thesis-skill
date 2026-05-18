@@ -15,6 +15,7 @@
 
 ## 参考项目
 
+- BypassAIGC：[https://github.com/chi111i/BypassAIGC](https://github.com/chi111i/BypassAIGC)
 - BypassAIGC exe 源码：[https://github.com/xyy54323/BypassAIGC](https://github.com/xyy54323/BypassAIGC)
 
 ## 最小环境
