@@ -9,7 +9,7 @@ policy:
 capabilities:
   - Build thesis outlines and chapter drafts from real project evidence
   - Manage Markdown manuscript writing with assets, diagrams, and screenshots
-  - Triage similarity and AIGC reports into evidence-preserving rewrite actions
+  - Process similarity and AIGC reports with the bundled BypassAIGC workflow and restore citation jumps after export
   - Extract school formatting rules into 论文格式.md from manuals, templates, and examples
   - Apply Word thesis formatting with categorized backups and final verification
   - Check diagrams, tables, captions, references, TOC, page headers, footers, and cross-references

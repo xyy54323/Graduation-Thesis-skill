@@ -20,7 +20,7 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 - `SKILL.md`：只放触发、导航、总规则和总流程。
 - `references_env/`：环境和资料检查。
 - `references_diagram/`：图片、图表、流程图、类图等制图规则。
-- `reference-images/`：只存放参考图片示例，不存放规则文档。
+- `reference-images/`：存放参考图片示例和简单目录索引，不存放制图规则文档。
 - `references_aigc/`：查重报告、AIGC 报告、降重改写规则和降 AIGC 交付验收清单。
 - `references_format/`：格式分析和 `论文格式.md` 生成规则。
 - `references_word/`：Word 回写、分类备份、手改稿保护和交付检查。
