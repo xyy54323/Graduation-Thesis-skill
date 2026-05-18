@@ -11,7 +11,7 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 
 - 本地环境、依赖工具和资料检查：读取 [`references_env/AI环境检查.md`](references_env/AI环境检查.md)。
 - 图片、流程图、架构图、类图、E-R 图、时序图制作：读取 [`references_diagram/图片制作规则.md`](references_diagram/图片制作规则.md)，并按需查看 `reference-images/`。
-- 查重报告、AIGC 检测报告、“降 AI”“降 AIGC”“降查重”：读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)。
+- 查重报告、AIGC 检测报告、“降 AI”“降 AIGC”“降查重”：读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)；完成工具导出后读取 [`references_aigc/降AIGC验收清单.md`](references_aigc/降AIGC验收清单.md)。
 - 示例论文、格式手册、工作手册、Word 模板分析：读取 [`references_format/格式分析与论文格式.md`](references_format/格式分析与论文格式.md)。
 - Word 回写、格式修改、分类备份、手改稿保护、最终交付检查：读取 [`references_word/Word回写与交付检查.md`](references_word/Word回写与交付检查.md)。
 
@@ -21,7 +21,7 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 - `references_env/`：环境和资料检查。
 - `references_diagram/`：图片、图表、流程图、类图等制图规则。
 - `reference-images/`：只存放参考图片示例，不存放规则文档。
-- `references_aigc/`：查重报告、AIGC 报告和降重改写规则。
+- `references_aigc/`：查重报告、AIGC 报告、降重改写规则和降 AIGC 交付验收清单。
 - `references_format/`：格式分析和 `论文格式.md` 生成规则。
 - `references_word/`：Word 回写、分类备份、手改稿保护和交付检查。
 - `skills/`：内置或随包携带的外部技能，如 drawio-skill、playwright。
@@ -172,6 +172,7 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 - 没有 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“整篇提取优化”。
 - 默认不处理摘要、目录、图题、表题、参考文献和学校固定格式文本，除非用户明确要求。
 - 降 AIGC 导出 Word 后，必须立即恢复正文参考文献引用跳转；如果引用编号变成普通文本，先恢复引用域或超链接，再写说明文件或进入交付检查。
+- 导出 Word、恢复引用跳转后，按 [`references_aigc/降AIGC验收清单.md`](references_aigc/降AIGC验收清单.md) 逐项验收。
 - 改完输出 `降AIGC分析报告.md` 和 `降AIGC修改说明.md`，并提示用户重新检测。
 
 ## 8. 最终交付
