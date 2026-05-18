@@ -45,6 +45,10 @@ yarn-error.log*
 *.sqlite3
 .word_source_cache/
 
+# Local test documents
+/*.docx
+/*.pdf
+
 # BypassAIGC generated/runtime artifacts
 tools/BypassAIGC/package/static/
 tools/BypassAIGC/package/dist/
@@ -58,3 +62,8 @@ tools/BypassAIGC/package/frontend/node_modules/
 # Local reference/tool folders
 参考项目/
 .ace-tool/
+
+# Publish only the runnable BypassAIGC executable in this skill repository
+tools/BypassAIGC/**
+!tools/BypassAIGC/
+!tools/BypassAIGC/AI学术写作助手.exe
