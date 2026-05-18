@@ -141,26 +141,13 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 
 表格优先使用 Markdown 表格，表题写在表格前一行。数据库表、接口表、测试表等内容要短，避免单元格过长影响 Word 排版。Word 定稿时表格默认按三线表检查；具体线宽从格式依据中确认。
 
-## 5. 检测报告处理与降 AIGC
-
-当用户要求降 AI、降 AIGC、降查重，或提供 PaperPass、SpeedAI 等检测报告时，先读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)。
-
-执行原则：
-
-- 优先使用 `tools/BypassAIGC/AI学术写作助手.exe`，由工具完成报告解析、片段提取、优化和 Word 导出。
-- 运行工具时，`.env` 需要由用户自己配置真实可用的 API Key、Base URL 和模型名称；AI 不要替用户编造密钥。
-- 用户提供 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“AIGC片段优化”。
-- 没有 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“整篇提取优化”。
-- 默认不处理摘要、目录、图题、表题、参考文献和学校固定格式文本，除非用户明确要求。
-- 改完输出 `降AIGC分析报告.md` 和 `降AIGC修改说明.md`，并提示用户重新检测。
-
-## 6. 格式分析
+## 5. 格式分析
 
 当用户提供示例论文、格式说明、工作手册、Word 模板或附件时，读取 [`references_format/格式分析与论文格式.md`](references_format/格式分析与论文格式.md)。
 
 格式分析结果写入 `论文格式.md`，并交给用户确认。用户确认前，可以继续写 `毕业论文.md` 正文，但不要把格式规则批量应用到 Word。
 
-## 7. 回写 Word
+## 6. 回写 Word
 
 只有在用户明确要求“写进 Word 毕业设计说明书”或“回写 Word”时才执行。执行前读取 [`references_word/Word回写与交付检查.md`](references_word/Word回写与交付检查.md)，并先创建分类备份。
 
@@ -173,6 +160,20 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 5. 检查目录、页眉页脚、页码域、交叉引用、图表编号和表格格式。
 6. 输出操作报告。
 
+## 7. 检测报告处理与降 AIGC
+
+当用户要求降 AI、降 AIGC、降查重，或提供 PaperPass、SpeedAI 等检测报告时，先读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)。
+
+执行原则：
+
+- 优先使用 `tools/BypassAIGC/AI学术写作助手.exe`，由工具完成报告解析、片段提取、优化和 Word 导出。
+- 运行工具时，`.env` 需要由用户自己配置真实可用的 API Key、Base URL 和模型名称；AI 不要替用户编造密钥。
+- 用户提供 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“AIGC片段优化”。
+- 没有 PaperPass 或 SpeedAI 的 PDF 检测报告时，使用“整篇提取优化”。
+- 默认不处理摘要、目录、图题、表题、参考文献和学校固定格式文本，除非用户明确要求。
+- 降 AIGC 导出 Word 后，重点检查正文参考文献引用是否仍是可跳转的交叉引用；若变成普通文本，必须恢复引用域或超链接。
+- 改完输出 `降AIGC分析报告.md` 和 `降AIGC修改说明.md`，并提示用户重新检测。
+
 ## 8. 最终交付
 
 最终交付前按 [`references_word/Word回写与交付检查.md`](references_word/Word回写与交付检查.md) 的“最终交付检查”执行。不能只因为脚本成功就交付。
@@ -183,6 +184,6 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 - 项目事实与源码一致，没有写入项目未实现功能。
 - `论文格式.md` 已根据用户提供的手册、模板或示例生成，并按最新用户反馈更新。
 - 目标 Word 已按分类规则备份，用户手改稿没有被误覆盖。
-- 自动目录、页眉页脚、页码、交叉引用和参考文献跳转未被破坏。
+- 自动目录、页眉页脚、页码、交叉引用和参考文献跳转未被破坏；执行过降 AIGC 后，要额外检查正文引用编号没有退化为普通文本。
 - 图片、图题、表格、表题编号连续，图片和表格没有明显错位。
 - 所有可见正文为正式论文内容，没有过程说明、待办、调试文本和占位文字。
