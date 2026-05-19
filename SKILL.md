@@ -12,7 +12,7 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 - 本地环境、依赖工具和资料检查：读取 [`references_env/AI环境检查.md`](references_env/AI环境检查.md)。
 - 图片、流程图、架构图、类图、E-R 图、时序图制作：读取 [`references_diagram/图片制作规则.md`](references_diagram/图片制作规则.md)，并必须先读取 `reference-images/<图类型>/制作图片规则.md`，再查看对应类型示例图。
 - 查重报告、AIGC 检测报告、“降 AI”“降 AIGC”“降查重”，以及 Word 回写或最终交付前主动 AIGC 优化检查：读取 [`references_aigc/检测报告处理与降AIGC改写.md`](references_aigc/检测报告处理与降AIGC改写.md)；完成工具导出后读取 [`references_aigc/降AIGC验收清单.md`](references_aigc/降AIGC验收清单.md)。
-- 示例论文、格式手册、工作手册、Word 模板分析：读取 [`references_format/格式分析与论文格式.md`](references_format/格式分析与论文格式.md)。
+- 示例论文、格式手册、工作手册、Word 模板分析：读取 [`references_format/格式分析与论文格式.md`](references_format/格式分析与论文格式.md)；缺少明确格式依据时再读取 [`references_format/默认格式.md`](references_format/默认格式.md) 作为兜底。
 - Word 回写、格式修改、分类备份、手改稿保护、最终交付检查：读取 [`references_word/Word回写与交付检查.md`](references_word/Word回写与交付检查.md)。
 
 ## 目录职责
@@ -22,7 +22,7 @@ description: Use when writing, revising, illustrating, testing, formatting, back
 - `references_diagram/`：图片、图表、流程图、类图等制图规则。
 - `reference-images/`：按图类型存放参考图片示例、同名 drawio 源文件和该类型 `制作图片规则.md`；AI 制图前必须读取对应类型目录。
 - `references_aigc/`：查重报告、AIGC 报告、降重改写规则和降 AIGC 交付验收清单。
-- `references_format/`：格式分析和 `论文格式.md` 生成规则。
+- `references_format/`：格式分析、默认格式和 `论文格式.md` 生成规则。
 - `references_word/`：Word 回写、分类备份、手改稿保护和交付检查。
 - `skills/`：内置或随包携带的外部技能，如 drawio-skill、playwright。
 
@@ -268,7 +268,7 @@ flowchart TD
 
 ## 5. 格式分析
 
-当用户提供示例论文、格式说明、工作手册、Word 模板或附件时，读取 [`references_format/格式分析与论文格式.md`](references_format/格式分析与论文格式.md)。
+当用户提供示例论文、格式说明、工作手册、Word 模板或附件时，读取 [`references_format/格式分析与论文格式.md`](references_format/格式分析与论文格式.md)。若资料没有明确某项格式，读取 [`references_format/默认格式.md`](references_format/默认格式.md) 补充为“默认兜底”。
 
 格式分析结果写入 `论文格式.md`，并交给用户确认。用户确认前，可以继续写 `毕业论文.md` 正文，但不得回写 Word、批量应用 Word 格式或最终交付。
 
